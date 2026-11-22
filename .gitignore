@@ -1,0 +1,12 @@
+# Runtime logs
+egg_log.txt
+*.log
+
+# Wallpaper Engine config backups (if placed locally)
+*.egg_backup*
+
+# OS / Editor clutter
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/

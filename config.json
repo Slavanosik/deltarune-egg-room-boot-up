@@ -1,0 +1,14 @@
+{
+  "chance": 100,
+  "systemVolumePercent": 50,
+  "workshopIds": [
+    "3776981825",
+    "3772358586"
+  ],
+  "wallpaperPath": "",
+  "wallpaperEnginePath": "",
+  "hideDesktopIcons": true,
+  "minimizeAllWindows": true,
+  "enableGlobalWallpaperAudio": true,
+  "maxLogLines": 200
+}
