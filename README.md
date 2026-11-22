@@ -22,10 +22,10 @@ Every time you sign into Windows, this lightweight script silently rolls a **1-i
 
 ## Features
 
-- **True Zero-Flash Startup** — Launched via `wscript.exe` + [`Launch-EggRoom.vbs`](Launch-EggRoom.vbs), so no black PowerShell console ever flashes on boot.
+- **No Flash Startup** — Launched via `wscript.exe` + [`Launch-EggRoom.vbs`](Launch-EggRoom.vbs), so no black PowerShell console ever flashes on boot.
 - **Zero-Overhead Miss Path** — The random roll happens *before* any C# compilation or Steam discovery. Non-triggering logins finish in milliseconds.
-- **Anti-Audio-Leak Sequence** — Wallpaper Engine is muted before Windows master volume is changed, and if a restart is needed to enable global audio output, the Egg Room wallpaper is selected *before* restarting so your old wallpaper never plays a single frame of audio.
-- **Smart Steam Library Discovery** — Reads Steam's `libraryfolders.vdf` from the registry to locate Wallpaper Engine and Workshop content on any drive or custom library folder (with fixed-drive fallback).
+- **No Audio Leaking** — Wallpaper Engine is muted before Windows master volume is changed, and if a restart is needed to enable global audio output, the Egg Room wallpaper is selected *before* restarting so your old wallpaper never plays a single frame of audio.
+- **Steam Library Discovery** — Reads Steam's `libraryfolders.vdf` from the registry to locate Wallpaper Engine and Workshop content on any drive or custom library folder (with fixed-drive fallback).
 - **Per-User Safe `config.json` Patching** — Only inspects and updates your current Windows account's `videoaudiooutput` setting in Wallpaper Engine's `config.json`, preserving all other settings and accounts.
 - **Easy Configuration & Safe Testing** — Edit [`config.json`](config.json) without touching code, verify your setup safely with `-DryRun`, or experience the easter egg on demand with `-Force`.
 - **Automatic Log Rotation** — Keeps `egg_log.txt` trimmed to the last 200 lines so it never grows unbounded.
